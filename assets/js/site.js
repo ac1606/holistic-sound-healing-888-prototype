@@ -1,5 +1,12 @@
 // Shared header/footer + interaction layer for the HSH 888 site.
 
+// Once a custom domain is live, set it here (no protocol, e.g. "holisticsoundhealing888.com").
+// Anyone who lands on the github.io URL gets bounced straight to this domain instead.
+const CUSTOM_DOMAIN = '';
+if (CUSTOM_DOMAIN && window.location.hostname.endsWith('github.io')) {
+  window.location.replace('https://' + CUSTOM_DOMAIN + window.location.pathname + window.location.search);
+}
+
 const NAV_LINKS = [
   { href: 'index.html', label: 'Home' },
   { href: 'about.html', label: 'About' },
