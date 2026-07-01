@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Quicksand:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Base font families — Courgette is a real brand font (supplied file, see tokens/fonts.css).
+     Script hero, display heading, and body remain Google Fonts picks (see README Visual
+     Foundations) until brand originals are supplied. */
+  --font-script: 'Courgette', cursive;              /* brand script — also used as accent */
+  --font-accent: 'Courgette', cursive;
+  --font-display: 'Cormorant Garamond', serif;      /* substitute for elegant serif name/headers */
+  --font-body: 'Quicksand', sans-serif;             /* substitute for friendly rounded sans body */
+
+  /* Semantic aliases */
+  --text-hero: var(--font-script);
+  --text-heading: var(--font-display);
+  --text-body: var(--font-body);
+
+  --fs-display-xl: 64px;
+  --fs-display-lg: 48px;
+  --fs-heading: 34px;
+  --fs-subheading: 22px;
+  --fs-body-lg: 19px;
+  --fs-body: 16px;
+  --fs-small: 13px;
+
+  --ls-wide: 0.04em;
+}

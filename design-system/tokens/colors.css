@@ -1,0 +1,45 @@
+:root {
+  /* Brand gradient base colors — from the HSH 888 logo (heart + infinity) */
+  --gold: #FFC233;
+  --orange: #FF8A3D;
+  --teal: #14C9B5;
+  --sky-blue: #2EB6F0;
+  --periwinkle: #7C86E8;
+  --navy: #1A2547;
+  --navy-deep: #11182E;
+  --cream: #FBF8F2;
+  --ink: #211E2B;
+
+  /* Semantic aliases */
+  --brand-warm-start: var(--gold);
+  --brand-warm-end: var(--orange);
+  --brand-cool-start: var(--teal);
+  --brand-cool-end: var(--sky-blue);
+  --brand-gradient-warm: linear-gradient(135deg, var(--gold), var(--orange));
+  --brand-gradient-cool: linear-gradient(135deg, var(--teal), var(--sky-blue));
+  --brand-gradient-hero: linear-gradient(160deg, var(--periwinkle) 0%, var(--navy) 100%);
+
+  --surface-page: var(--cream);
+  --surface-card: #FFFFFF;
+  --surface-deep: var(--navy-deep);
+  --surface-navy: var(--navy);
+
+  --text-primary: var(--ink);
+  --text-on-dark: #F4F2FA;
+  --text-muted: #6B6878;
+  --text-on-dark-muted: #B9BCD9;
+
+  --border-soft: #E7E1D6;
+  --border-on-dark: rgba(244,242,250,0.18);
+
+  --accent-primary: var(--orange);
+  --accent-secondary: var(--teal);
+
+  --on-warm: #FFFFFF;
+  --on-warm-muted: rgba(255,255,255,0.85);
+  --on-cool: #FFFFFF;
+  --on-cool-muted: rgba(255,255,255,0.85);
+
+  --shadow-card: 0 8px 24px rgba(26, 37, 71, 0.08);
+  --shadow-card-hover: 0 12px 32px rgba(26, 37, 71, 0.14);
+}
