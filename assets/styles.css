@@ -3,7 +3,7 @@
    the logo's warm heart-gradient), deep wine-plum for dark grounding surfaces,
    cream for light surfaces. Glass nav, glowing CTAs, animated gradient mesh
    hero — modern/premium rather than flat single-tone blocks. */
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Quicksand:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@400;500;600;700&display=swap');
 
 @font-face {
   font-family: 'Courgette';
@@ -19,7 +19,7 @@
   --terracotta: #FF5A5F;
   --sunset-1: #FF6B35;
   --sunset-2: #FF3D77;
-  --cream: #FFF8F0;
+  --cream: #FFF8F0; /* unslop-ignore: sampled from the real HSH 888 business card background */
   --surface-card: #FFFFFF;
   --ink: #2A1B26;
   --text-muted: #7A6270;
@@ -33,7 +33,6 @@
     radial-gradient(circle at 50% 90%, rgba(255, 107, 53, 0.45), transparent 50%),
     linear-gradient(160deg, var(--plum) 0%, var(--plum-deep) 100%);
   --gradient-gold: linear-gradient(120deg, var(--gold) 0%, var(--sunset-1) 55%, var(--sunset-2) 100%);
-  --gradient-text: linear-gradient(120deg, var(--gold-soft), var(--sunset-1), var(--sunset-2));
 
   --shadow-card: 0 8px 24px rgba(74, 31, 59, 0.1);
   --shadow-card-hover: 0 16px 40px rgba(74, 31, 59, 0.16);
@@ -45,7 +44,7 @@
   --radius-pill: 999px;
 
   --font-script: 'Courgette', cursive;
-  --font-display: 'Cormorant Garamond', serif;
+  --font-display: 'PT Serif', serif;
   --font-body: 'Quicksand', sans-serif;
 }
 
@@ -109,14 +108,9 @@ img { max-width: 100%; display: block; }
   50% { box-shadow: 0 10px 34px rgba(255, 61, 119, 0.45); }
 }
 
-/* Gradient text utility */
+/* Hero title: solid gold-soft, no gradient-clip text */
 .text-gradient {
-  background: var(--gradient-text);
-  background-size: 200% auto;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  animation: gradientShift 6s ease infinite;
+  color: var(--gold-soft);
 }
 
 /* Buttons */
@@ -242,7 +236,7 @@ img { max-width: 100%; display: block; }
 }
 .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
 .nav-logo img { width: 36px; height: 36px; object-fit: contain; }
-.nav-logo span { font-family: var(--font-script); font-size: 22px; background: var(--gradient-text); background-size: 200% auto; -webkit-background-clip: text; background-clip: text; color: transparent; }
+.nav-logo span { font-family: var(--font-script); font-size: 22px; color: var(--plum); }
 .nav-links { display: flex; gap: 28px; list-style: none; margin: 0; padding: 0; }
 .nav-links a {
   color: var(--text-muted);
